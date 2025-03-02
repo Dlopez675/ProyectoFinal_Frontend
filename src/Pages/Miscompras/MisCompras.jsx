@@ -118,12 +118,12 @@ const MisCompras = () => {
                         <p className="total">
                             <strong>Total:</strong> {formatNumber(compra.productos.reduce((total, producto) => total + producto.price * producto.quantity, 0))}
                         </p>
-                        <button
+                        {/* <button
                             className="volver-a-comprar-btn"
                             onClick={() => handleVolverAComprar(compra.productos)}
                         >
                             Volver a comprar
-                        </button>
+                        </button> */}
                     </div>
                 ))
             )}
