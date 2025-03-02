@@ -1,0 +1,28 @@
+{
+    "nombre": "asdasd",
+    "apellido": "asdad",
+    "direccion": "asdasd",
+    "numeroTarjeta": "asdads",
+    "fechaVencimiento": "asdads",
+    "cvv": "asdads",
+    "cart": [
+      {
+        "desc": "La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal (a veces aceite de oliva) que comúnmente se cubre con salsa de tomate, queso y otros muchos ingredientes, y que se hornea a alta temperatura, tradicionalmente en un horno de leña.",
+        "id": "p002",
+        "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fcheese-164872_640_com.jpg?alt=media&token=18b2b821-4d0d-43f2-a1c6-8c57bc388fab",
+        "ingredients": [
+          "mozzarella",
+          "tomates",
+          "jamón",
+          "choricillo"
+        ],
+        "name": "Española",
+        "price": 7250,
+        "createdBy": "Pizza Restaunart",
+        "category": "Mediana",
+        "stock": 10,
+        "quantity": 2
+      }
+    ],
+    "fecha": "16/2/2025, 14:50:39"
+  }

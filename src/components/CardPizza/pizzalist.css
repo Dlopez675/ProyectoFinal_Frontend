@@ -1,0 +1,66 @@
+/* Estilos para el contenedor principal */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+/* Estilos para el Footer */
+.piePagina {
+    background-color: #f8f9fa;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: auto; /* Empuja el Footer hacia abajo */
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.pizza-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    width: 100%;
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    height: auto; /* Altura automática */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para la imagen de la tarjeta */
+.card-img-top {
+    width: 100%;
+    height: 150px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Hace que el cuerpo ocupe el espacio restante */
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-top: 10px;
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+}

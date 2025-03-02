@@ -1,0 +1,30 @@
+.fondo {
+  background-image: url(../../assets/img/pizza-aceituna.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* Centrado perfecto */
+  min-height: 80vh;
+  /* Altura de toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 50px;
+  /* Añade espacio al texto */
+  text-align: right;
+}
+
+
+
+.fondo h1 {
+  font-size: 5rem;
+  /* Tamaño del título */
+  margin-bottom: 1rem;
+  /* Espacio entre el título y el párrafo */
+}
+
+.fondo p {
+  font-size: 1.5rem;
+  /* Tamaño del párrafo */
+}

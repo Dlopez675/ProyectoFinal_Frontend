@@ -1,0 +1,275 @@
+/* Estilos generales */
+.mis-compras-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.mis-compras-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el mensaje de carga */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.success-message {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Estilos para el mensaje de error */
+.error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff4d4d;
+    margin-top: 20px;
+}
+
+/* Estilos para el mensaje de "No hay compras registradas" */
+.no-compras {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Estilos para cada compra */
+.compra-item {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.compra-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.compra-item h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #444;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para la lista de productos */
+.compra-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.compra-item ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.compra-item ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.compra-item ul li img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.compra-item ul li .product-details {
+    flex: 1;
+}
+
+.compra-item ul li .product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.compra-item ul li .product-quantity,
+.compra-item ul li .product-price {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Estilos para el total de la compra */
+.compra-item .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* Estilos para el botón "Volver a comprar" */
+.volver-a-comprar-btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.volver-a-comprar-btn:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+
+/* .mis-compras-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.mis-compras-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.compra-item {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.compra-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.compra-item h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #444;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.compra-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.compra-item ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+.compra-item ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.compra-item ul li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.compra-item ul li p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.compra-item ul li p strong {
+    color: #333;
+}
+
+.compra-item .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 15px;
+    text-align: right;
+} */
+
+/* Estilos para el mensaje de "No hay compras registradas" */
+/* .mis-compras-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+} */
+
+/* Estilos para el mensaje de error */
+/* .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff4d4d;
+    margin-top: 20px;
+} */

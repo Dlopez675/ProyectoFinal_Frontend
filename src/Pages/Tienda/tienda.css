@@ -1,0 +1,29 @@
+/* Tienda.css */
+
+/* Contenedor principal de la tienda */
+.tienda-container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para la lista de pizzas */
+.pizza-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño por defecto */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+/* Media query para tablets (pantener 2 columnas) */
+@media (max-width: 768px) {
+    .pizza-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+/* Media query para móviles (1 columna) */
+@media (max-width: 576px) {
+    .pizza-list {
+        grid-template-columns: repeat(1, 1fr); /* 1 columna en pantallas pequeñas */
+    }
+}
